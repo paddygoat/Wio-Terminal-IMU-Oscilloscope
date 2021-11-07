@@ -1,3 +1,3 @@
-# Seeed_Arduino_Grove_DopplerRadar  [![Build Status](https://travis-ci.com/Seeed-Studio/Seeed_Arduino_DopplerRadar.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Seeed_Arduino_DopplerRadar)
+# Wio-Terminal-IMU-Oscilloscope
 
 ![Optional Text](../master/images/IMU.JPG)
