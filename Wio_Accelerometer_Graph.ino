@@ -104,7 +104,7 @@ void TraceAndBackground(TFT_eSPI& tft, double x,  double y,  byte dp,
             tft.setTextColor(tcolor, bcolor);
             // precision is default Arduino--this could really use some format control
             tft.drawFloat(i, dp, gx - 4, temp, 1);
-////////////////////////////////////////////////////////////////
+
             if (i == 0) 
             {
                 tft.drawLine(gx, temp, gx + w, temp, acolor);
@@ -113,16 +113,12 @@ void TraceAndBackground(TFT_eSPI& tft, double x,  double y,  byte dp,
             } else {
                 tft.drawLine(gx, temp, gx + w, temp, gcolor);
             }
-///////////////////////////////////////////////////////////////
         }
 
         // draw x scale
         for (i = xlo; i <= xhi; i += xinc) {
 
             // compute the transform
-
-
-/////////////////////////////////////////////////////////////////////////
             temp = (i - xlo) * (w) / (xhi - xlo) + gx;
             if (i == 0) {
                 tft.drawLine(temp, gy, temp, gy - h, acolor);
@@ -132,8 +128,6 @@ void TraceAndBackground(TFT_eSPI& tft, double x,  double y,  byte dp,
             } else {
                 tft.drawLine(temp, gy, temp, gy - h, gcolor);
             }
-/////////////////////////////////////////////////////////////////////////
-            
 
             // draw the axis labels
             tft.setTextColor(tcolor, bcolor);
@@ -255,11 +249,6 @@ void loop()
   x_values = lis.getAccelerationX();
   y_values = lis.getAccelerationY();
   z_values = lis.getAccelerationZ();
-
-  // Serial.print("X: "); Serial.print(x_values);
-  // Serial.print(" Y: "); Serial.print(y_values);
-  // Serial.print(" Z: "); Serial.print(z_values);
-  // Serial.println();
   
   double a;
   double b;
