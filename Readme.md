@@ -2,7 +2,8 @@
 
 <img src="https://github.com/paddygoat/Wio-Terminal-IMU-Oscilloscope/blob/main/images/IMU.JPG" alt="IMU.JPG"/>
 
-```#include"LIS3DHTR.h"
+```c++
+#include"LIS3DHTR.h"
 #include <TFT_eSPI.h> // Graphics and font library for ILI9341 driver chip
 #include <SPI.h>
 TFT_eSPI tft = TFT_eSPI();  // Invoke library
