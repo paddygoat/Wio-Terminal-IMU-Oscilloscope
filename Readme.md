@@ -256,11 +256,6 @@ void loop()
   y_values = lis.getAccelerationY();
   z_values = lis.getAccelerationZ();
 
-  // Serial.print("X: "); Serial.print(x_values);
-  // Serial.print(" Y: "); Serial.print(y_values);
-  // Serial.print(" Z: "); Serial.print(z_values);
-  // Serial.println();
-  
   double a;
   double b;
   double c;
